@@ -23,7 +23,7 @@ class NewsViewModel(
     app: Application,
     private val repository: NewsRepository
 ): AndroidViewModel(app) {
-
+    val a = 5;
     val breakingNews:MutableLiveData<Resource<NewsResponse>> = MutableLiveData()
     val searchNews: MutableLiveData<Resource<NewsResponse>> = MutableLiveData()
     var breakingPageNumber = 1
